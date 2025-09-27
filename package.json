@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "scripts": {
+  "start": "concurrently \"npm run start --prefix backend\" \"npm run start --prefix frontend\"",
+  "build": "npm run build --prefix frontend && npm run start --prefix backend"
+}
+}
